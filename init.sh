@@ -1,7 +1,9 @@
 #!/bin/bash
 
-path=$(dirname $(readlink -f $0))
+scripts=$(dirname $(readlink -f $0))/init
 
-chmod +x $path/init/*.sh 
+# Make the init scripts executable
+chmod +x $scripts/*.sh 
 
-$path/init/symlinks.sh
+$scripts/installs.sh
+$scripts/symlinks.sh
