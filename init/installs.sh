@@ -9,8 +9,12 @@ add-apt-repository -y ppa:regolith-linux/stable
 add-apt-repository -y ppa:aslatter/ppa
 # google-chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O $downloads/google-chrome.deb
+# apt-fast
+add-apt-repository -y ppa:apt-fast/stable
 
 apt update --fix-missing
+# Before downloading more packages, get apt-fast
+apt install -y apt-fast
 apt upgrade -y
 
 # install necessary packages
