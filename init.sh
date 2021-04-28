@@ -1,6 +1,9 @@
 #!/bin/bash
 
-scripts=$(dirname $(readlink -f $0))/init
+# Set dotfiles as pwd
+cd $(dirname $(readlink -f $0))
+
+scripts=./init
 
 # Make the init scripts executable
 chmod +x $scripts/*.sh 

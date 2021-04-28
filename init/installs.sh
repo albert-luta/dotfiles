@@ -8,14 +8,18 @@ add-apt-repository -y ppa:regolith-linux/stable
 # alacritty
 add-apt-repository -y ppa:aslatter/ppa
 # google-chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O $downloads/google-chrome.deb
+sudo -u $SUDO_USER curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --create-dirs -o $downloads/google-chrome.deb
 # apt-fast
 add-apt-repository -y ppa:apt-fast/stable
 
+# update sources
 apt update --fix-missing
-# Before downloading more packages, install and configure apt-fast
-apt install -y apt-fast
-apt upgrade -y
+
+# before downloading more packages, install and configure apt-fast
+DEBIAN_FRONTEND=noninteractive apt install -y apt-fast
+echo $0
+chmod +x ./apt-fast/temp-bash-alias.sh
+./apt-fast/temp-bash-alias.sh
 
 # install necessary packages
 apt install -y \
@@ -28,3 +32,5 @@ apt install -y \
 
 sudo -H pip3 install autotiling
 
+# upgrade packages
+apt upgrade -y
