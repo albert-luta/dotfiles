@@ -13,7 +13,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -
 add-apt-repository -y ppa:apt-fast/stable
 
 apt update --fix-missing
-# Before downloading more packages, get apt-fast
+# Before downloading more packages, install and configure apt-fast
 apt install -y apt-fast
 apt upgrade -y
 
