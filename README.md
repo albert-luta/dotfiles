@@ -4,7 +4,7 @@ My configuration for a fresh ubuntu(or ubuntu based) install
 ### 1. Open the terminal and make sure you are in the home directory
 `cd`
 ### 2. Clone the repository
-`git clone https://github.com/lutaalbert/dotfiles.git'
+`git clone https://github.com/lutaalbert/dotfiles.git`
 Enter your github credentials
 ### 4. Change your git credentials(user block)
 `cd dotfiles/ && vim .gitconfig`
