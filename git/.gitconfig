@@ -2,6 +2,3 @@
 	name = Albert Luta
 	email = luta.albert100@gmail.com
 
-[credential]
-	helper = cache
-
