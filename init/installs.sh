@@ -19,6 +19,7 @@ apt install -y \
 	python3-pip \
 	$downloads/google-chrome.deb \
 	i3-gaps i3status i3lock dmenu \
+	xorg openbox \
 	alacritty
 
 sudo -H pip3 install autotiling
