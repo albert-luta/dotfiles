@@ -17,9 +17,7 @@ apt update --fix-missing
 
 # before downloading more packages, install and configure apt-fast
 DEBIAN_FRONTEND=noninteractive apt install -y apt-fast
-echo $0
-chmod +x ./apt-fast/temp-bash-alias.sh
-./apt-fast/temp-bash-alias.sh
+. apt-fast/temp-bash-alias.sh
 
 # install necessary packages
 apt install -y \
@@ -28,9 +26,21 @@ apt install -y \
 	$downloads/google-chrome.deb \
 	i3-gaps i3status i3lock dmenu \
 	xorg openbox \
+	zsh \
+	neovim \
 	alacritty
 
+# install autotiling for i3
 sudo -H pip3 install autotiling
+
+# make zsh the default shell
+chsh -s $(which zsh)
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+# install powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+chown -R $SUDO_USER:$SUDO_USER $HOME/.cache
 
 # upgrade packages
 apt upgrade -y
+
