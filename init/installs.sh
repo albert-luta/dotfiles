@@ -30,16 +30,11 @@ apt install -y \
 	neovim \
 	alacritty
 
-# install autotiling for i3
+# autotiling for i3
 sudo -H pip3 install autotiling
 
-# make zsh the default shell
-chsh -s $(which zsh)
-# install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-# install powerlevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-chown -R $SUDO_USER:$SUDO_USER $HOME/.cache
+# zsh
+. shell/zsh/init.sh
 
 # upgrade packages
 apt upgrade -y
