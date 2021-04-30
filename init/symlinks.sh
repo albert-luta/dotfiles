@@ -29,3 +29,7 @@ ln -sf $root/shell/zsh/.zsh_functions/* $HOME/.zsh_functions/
 # p10k
 ln -sf $root/shell/zsh/.p10k.zsh $HOME/.p10k.zsh
 
+# tmux
+ln -sf $HOME/.tmux/.tmux.conf $HOME/.tmux.conf
+ln -sf $root/tmux/.tmux.conf.local $HOME/.tmux.conf.local
+

@@ -28,13 +28,16 @@ apt install -y \
 	xorg openbox \
 	zsh \
 	neovim \
-	alacritty
+	alacritty \
+	tmux
 
 # autotiling for i3
 sudo -H pip3 install autotiling
 
 # zsh
 . shell/zsh/init.sh
+# tmux
+git clone https://github.com/gpakosz/.tmux.git $HOME/.tmux/
 
 # upgrade packages
 apt upgrade -y
