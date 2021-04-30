@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
@@ -20,15 +13,11 @@ plugins=(
 	colored-man-pages
 	command-not-found
 	zsh-autosuggestions
-	zsh-vi-mode
 	zsh-syntax-highlighting
 )
 
-# The plugin will auto execute this zvm_after_lazy_keybindings function
-function zvm_after_lazy_keybindings() {
-	# Auto suggestions plugin widgets
-	zvm_bindkey vicmd '^ ' autosuggest-accept
-}
+# Auto suggestions plugin widgets
+bindkey '^ ' autosuggest-accept
 
 source $ZSH/oh-my-zsh.sh
 
