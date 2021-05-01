@@ -12,12 +12,11 @@ My configuration for a fresh ubuntu(or ubuntu based) install
 
 `git clone https://github.com/lutaalbert/dotfiles.git`
 
-### 4. Change your git credentials(user block)
+### 3. Run the initialization file
 
-`cd dotfiles/ && vim git/.gitconfig`
+`bash dotfiles/init.sh` Enter your password
 
-### 5. Run the initialization file
+### 4. Add the generated ssh key on platforms
 
-`sudo -E bash init.sh`
-Enter your password
+`~/.ssh/id_ed25519.pub`
 

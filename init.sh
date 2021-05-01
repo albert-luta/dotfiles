@@ -7,6 +7,7 @@ root=$(dirname $(readlink -f $0))
 cd $root
 
 # Run the scripts
+. init/generate-ssh.sh
 . init/installs.sh
 . init/symlinks.sh
 
