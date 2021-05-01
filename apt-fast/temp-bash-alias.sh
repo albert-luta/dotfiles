@@ -9,3 +9,6 @@ if ! grep -q $bash_aliases -e "$alias"; then
 	echo $alias >> $bash_aliases
 fi
 
+# Reload .bash_aliases
+. $bash_aliases
+
