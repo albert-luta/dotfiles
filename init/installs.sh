@@ -16,7 +16,7 @@ sudo add-apt-repository -y ppa:apt-fast/stable
 sudo apt update --fix-missing
 
 # before downloading more packages, install and configure apt-fast
-DEBIAN_FRONTEND=noninteractive sudo apt install -y apt-fast
+sudo DEBIAN_FRONTEND=noninteractive apt install -y apt-fast
 . apt-fast/temp-bash-alias.sh
 
 # install necessary packages
