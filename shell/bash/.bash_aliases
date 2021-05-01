@@ -8,6 +8,8 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # git
+alias gps='git push'
+alias gpl='git pull'
 alias gb='git branch'
 alias gs='git status'
 alias gd='git diff'
