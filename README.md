@@ -14,7 +14,7 @@ My configuration for a fresh ubuntu(or ubuntu based) install
 
 ### 3. Run the initialization file
 
-`. dotfiles/init.sh` Enter your password when asked(possible multiple times)
+`bash dotfiles/init.sh` Enter your password when asked(possible multiple times)
 
 ### 4. Reboot
 
