@@ -10,4 +10,5 @@ cd $root
 . init/generate-ssh.sh
 . init/installs.sh
 . init/symlinks.sh
+. init/post-install.sh
 
