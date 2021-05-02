@@ -1,6 +1,7 @@
 alias v='nvim'
 alias cl='clear'
 alias apt='apt-fast'
+alias cat='batcat'
 
 # ls
 alias ll='ls -alF'
