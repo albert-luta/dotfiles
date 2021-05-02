@@ -34,7 +34,8 @@ sudo apt install -y \
 	neovim \
 	alacritty \
 	tmux \
-	bat
+	bat \
+	tree
 
 # autotiling for i3
 sudo pip3 install autotiling

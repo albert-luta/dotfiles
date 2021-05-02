@@ -1,12 +1,16 @@
+# general
 alias v='nvim'
 alias cl='clear'
 alias apt='apt-fast'
 alias cat='batcat'
 
 # ls
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias l='ls -l'
+alias la='l -A'
+alias lt='tree'
+alias lte='lt -puh'
+alias lta='lt -a'
+alias ltae='lta -puh'
 
 # git
 alias gps='git push'
@@ -14,6 +18,8 @@ alias gpl='git pull'
 alias gb='git branch'
 alias gs='git status'
 alias gd='git diff'
+alias ga='git add'
 alias gc='git commit'
+alias gco='git checkout'
 alias gl='git log'
 
