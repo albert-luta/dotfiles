@@ -1,16 +1,20 @@
 #!/bin/bash
 
 downloads=$HOME/Downloads
+config=$HOME/.config
 
 # add necessary ppas
 # i3-gaps
 sudo add-apt-repository -y ppa:regolith-linux/stable
 # alacritty
 sudo add-apt-repository -y ppa:aslatter/ppa
-# google-chrome
-curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --create-dirs -o $downloads/google-chrome.deb
 # apt-fast
 sudo add-apt-repository -y ppa:apt-fast/stable
+# google-chrome
+curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --create-dirs -o $downloads/google-chrome.deb
+# z
+curl https://raw.githubusercontent.com/rupa/z/master/z.sh --create-dirs -o $config/z/z.sh
+touch $HOME/.z
 
 # update sources
 sudo apt update --fix-missing
