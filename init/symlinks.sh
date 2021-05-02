@@ -18,6 +18,7 @@ ln -sf $root/alacritty/* $HOME/.config/alacritty/
 ln -sf $root/i3/* $HOME/.config/i3/
 
 # shell
+ln -sf $root/shell/.common_aliases $HOME/.common_aliases
 # bash
 ln -sf $root/shell/bash/.bashrc $HOME/.bashrc
 ln -sf $root/shell/bash/.bash_aliases $HOME/.bash_aliases
