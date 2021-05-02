@@ -4,6 +4,10 @@ export ZSH=~/.oh-my-zsh
 # Theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# Nvm
+export NVM_COMPLETION=true
+export NVM_LAZY_LOAD=true
+
 # Plugins
 plugins=(
 	zsh-nvm
