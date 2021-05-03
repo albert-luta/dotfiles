@@ -5,7 +5,7 @@ config=$HOME/.config
 
 # add necessary ppas
 # firacode
-sudo add-apt-repository universe
+sudo add-apt-repository -y universe
 # i3-gaps
 sudo add-apt-repository -y ppa:regolith-linux/stable
 # alacritty
@@ -28,7 +28,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt install -y apt-fast
 . apt-fast/temp-bash-alias.sh
 
 # install necessary packages
-sudo apt install -y \
+sudo apt install -yf \
 	python3-pip \
 	i3-gaps i3status i3lock dmenu \
 	xorg openbox \
