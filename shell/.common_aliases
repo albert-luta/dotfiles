@@ -5,12 +5,12 @@ alias apt='apt-fast'
 alias cat='batcat'
 
 # ls
-alias l='ls -l'
+alias l='lsd -l'
 alias la='l -A'
-alias lt='tree'
-alias lte='lt -puh'
-alias lta='lt -a'
-alias ltae='lta -puh'
+alias lt='lsd --tree'
+alias lte='lt -l'
+alias lta='lt -A'
+alias ltae='lta -l'
 
 # git
 alias gps='git push'

@@ -12,11 +12,13 @@ sudo add-apt-repository -y ppa:regolith-linux/stable
 sudo add-apt-repository -y ppa:aslatter/ppa
 # apt-fast
 sudo add-apt-repository -y ppa:apt-fast/stable
-# google-chrome
-curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --create-dirs -o $downloads/google-chrome.deb
 # z
 curl https://raw.githubusercontent.com/rupa/z/master/z.sh --create-dirs -o $config/z/z.sh
 touch $HOME/.z
+# google-chrome
+curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --create-dirs -o $downloads/google-chrome.deb
+# lsd
+curl -L https://github.com/Peltoche/lsd/releases/download/0.20.1/lsd_0.20.1_amd64.deb --create-dirs -o $downloads/lsd.deb
 
 # update sources
 sudo apt update --fix-missing
@@ -28,7 +30,6 @@ sudo DEBIAN_FRONTEND=noninteractive apt install -y apt-fast
 # install necessary packages
 sudo apt install -y \
 	python3-pip \
-	$downloads/google-chrome.deb \
 	i3-gaps i3status i3lock dmenu \
 	xorg openbox \
 	zsh \
@@ -36,9 +37,10 @@ sudo apt install -y \
 	alacritty \
 	tmux \
 	bat \
-	tree \
 	watchman \
-	fonts-firacode
+	fonts-firacode \
+	$downloads/google-chrome.deb \
+	$downloads/lsd.deb
 
 # autotiling for i3
 sudo pip3 install autotiling
