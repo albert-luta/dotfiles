@@ -16,13 +16,22 @@ My configuration for a fresh ubuntu(or ubuntu based) install
 
 `bash dotfiles/init.sh` Enter your password when asked(possible multiple times)
 
-### 4. Reboot
-
-### 5. Install node
+### 4. Install node
 
 For LTS: `nvm install --lts --default && nvm use --lts`
 
-### 6. Add the generated ssh key on platforms(github, gitlab etc)
+### 5. Install nvim plugins
+
+#### Coc
+
+1. Open nvim - `v`
+2. Install plugins - `:PlugInstall`
+
+#### Lua
+
+### 6. Reboot
+
+### 7. Add the generated ssh key on platforms(github, gitlab etc)
 
 Key path: `~/.ssh/id_ed25519.pub`
 

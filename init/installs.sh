@@ -43,6 +43,11 @@ sudo pip3 install autotiling
 . shell/zsh/init.sh
 # tmux
 git clone https://github.com/gpakosz/.tmux.git $HOME/.tmux/
+# nvim
+# coc
+# vim-plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # upgrade packages
 sudo apt upgrade -y
