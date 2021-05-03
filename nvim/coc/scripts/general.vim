@@ -6,8 +6,6 @@ filetype plugin indent on
 set hidden
 set shortmess+=c
 set completeopt=menuone,noinsert,noselect
-set showtabline=2
-set noshowmode
 " set noerrorbells
 " Tabs
 set tabstop=4
