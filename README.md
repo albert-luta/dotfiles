@@ -43,5 +43,5 @@ For Wsl - `cat ~/.ssh/id_ed25519.pub | clip.exe`
 
 #### (Optional) Switch dotfiles repo connection from https to ssh
 
-`cd ~/dotfiles && git remote set-url origin git@github.com:lutaalbert/dotfiles.git && echo 'yes' | git push -u origin master` Type 'yes(Enter)'
+`cd ~/dotfiles && git remote set-url origin git@github.com:lutaalbert/dotfiles.git && echo 'yes' | git push -u origin master`
 
