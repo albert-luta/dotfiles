@@ -11,6 +11,7 @@
   },
   // Eslint
   "eslint.autoFixOnSave": true,
+  "coc.preferences.formatOnType": true,
   // Prettier
   "prettier.eslintIntegration": true,
   "prettier.disableLanguages": [],
@@ -29,5 +30,7 @@
     "prisma"
   ],
   // Css Modules
-  "cssmodules.camelCase": true
+  "cssmodules.camelCase": true,
+  // Auto Pairs
+  "pairs.disableLanguages": ["html"]
 }
