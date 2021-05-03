@@ -28,7 +28,8 @@ sudo DEBIAN_FRONTEND=noninteractive apt install -y apt-fast
 . apt-fast/temp-bash-alias.sh
 
 # install necessary packages
-sudo apt install -yf \
+# temp -o flag -> ubuntu-20.04 doesn't support multiple rust packages installed through apt(bat, ripgrep)
+sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	python3-pip \
 	i3-gaps i3status i3lock dmenu \
 	xorg openbox \
