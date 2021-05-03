@@ -15,6 +15,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Git inside Vim
 Plug 'tpope/vim-fugitive'
+" Git line symbols
+Plug 'airblade/vim-gitgutter'
 " Fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
