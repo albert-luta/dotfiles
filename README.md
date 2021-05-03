@@ -18,7 +18,7 @@ My configuration for a fresh ubuntu(or ubuntu based) install
 
 ### 4. Install node
 
-For LTS: `nvm install --lts --default && nvm use --lts`
+For LTS - `nvm install --lts --default && nvm use --lts`
 
 ### 5. Install nvim plugins
 
@@ -33,4 +33,14 @@ For LTS: `nvm install --lts --default && nvm use --lts`
 
 ### 7. Add the generated ssh key on platforms(github, gitlab etc)
 
-Key path: `~/.ssh/id_ed25519.pub`
+#### Save the key in clipboad
+
+For Wsl - `cat ~/.ssh/id_ed25519.pub | clip.exe`
+
+#### Add the key on platforms
+
+- [github](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+
+#### (Optional) Switch dotfiles repo connection from https to ssh
+
+`cd ~/dotfiles && git remote set-url origin git@github.com:lutaalbert/dotfiles.git && git push -u origin master` Type 'yes(Enter)'
