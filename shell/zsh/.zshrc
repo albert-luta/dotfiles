@@ -7,6 +7,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Nvm
 export NVM_COMPLETION=true
 export NVM_LAZY_LOAD=true
+export NVM_LAZY_LOAD_EXTRA_COMMANDS=('nvim')
 
 # Plugins
 plugins=(
