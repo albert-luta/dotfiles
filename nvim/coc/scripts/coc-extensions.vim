@@ -4,7 +4,10 @@ let g:coc_global_extensions=[
 	\ 'coc-eslint',
 	\ 'coc-prettier',
 	\ 'coc-json',
-	\ 'coc-vetur',
 	\ 'coc-html',
 	\ 'coc-css',
+	\ 'coc-prisma',
+	\ 'coc-markdownlint',
+	\ 'coc-styled-components',
+	\ 'coc-cssmodules'
 	\]

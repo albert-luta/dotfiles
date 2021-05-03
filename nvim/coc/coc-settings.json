@@ -1,1 +1,23 @@
-{}
+{
+  // Eslint
+  "eslint.autoFixOnSave": true,
+  // Prettier
+  "prettier.eslintIntegration": true,
+  "prettier.disableLanguages": [],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "graphql",
+    // I don't know if the following works
+    "html",
+    "css",
+    "scss",
+    "markdown",
+    "prisma"
+  ],
+  // Css Modules
+  "cssmodules.camelCase": true
+}
