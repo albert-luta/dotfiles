@@ -35,7 +35,8 @@ sudo apt install -y \
 	alacritty \
 	tmux \
 	bat \
-	tree
+	tree \
+	watchman
 
 # autotiling for i3
 sudo pip3 install autotiling
