@@ -26,7 +26,6 @@ For LTS: `nvm install --lts --default && nvm use --lts`
 
 1. Open nvim - `v`
 2. Install plugins - `:PlugInstall`
-3. Install coc extensions - `:source ~/.config/nvim/init.vim`
 
 #### Lua
 
@@ -35,4 +34,3 @@ For LTS: `nvm install --lts --default && nvm use --lts`
 ### 7. Add the generated ssh key on platforms(github, gitlab etc)
 
 Key path: `~/.ssh/id_ed25519.pub`
-
