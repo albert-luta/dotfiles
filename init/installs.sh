@@ -39,6 +39,7 @@ sudo apt install -y \
 	bat \
 	watchman \
 	fonts-firacode \
+	ripgrep \
 	$downloads/google-chrome.deb \
 	$downloads/lsd.deb
 

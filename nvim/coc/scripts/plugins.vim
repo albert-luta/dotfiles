@@ -15,6 +15,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Git inside Vim
 Plug 'tpope/vim-fugitive'
+" Fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 " Utils
 " Comment selection
 Plug 'tpope/vim-commentary'
