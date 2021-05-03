@@ -26,6 +26,7 @@ For LTS: `nvm install --lts --default && nvm use --lts`
 
 1. Open nvim - `v`
 2. Install plugins - `:PlugInstall`
+3. Install coc extensions - `:source ~/.config/nvim/init.vim`
 
 #### Lua
 
