@@ -35,10 +35,9 @@ ln -sf $HOME/.tmux/.tmux.conf $HOME/.tmux.conf
 ln -sf $root/tmux/.tmux.conf.local $HOME/.tmux.conf.local
 
 # nvim
-$nvim=$HOME/.config/nvim
-[ ! -d $nvim ] && mkdir -p $nvim
+[ ! -d $HOME/.config/nvim ] && mkdir -p $HOME/.config/nvim
 # coc
-ln -sf $root/nvim/coc/* $nvim/
+ln -sf $root/nvim/coc/* $HOME/.config/nvim/
 # $coc=$root/nvim/coc
 # ln -sf $coc/init.vim $nvim/init.vim
 # ln -sf $coc/coc-settings.json $nvim/coc-settings.json 
