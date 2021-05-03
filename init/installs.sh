@@ -4,6 +4,8 @@ downloads=$HOME/Downloads
 config=$HOME/.config
 
 # add necessary ppas
+# firacode
+sudo add-apt-repository universe
 # i3-gaps
 sudo add-apt-repository -y ppa:regolith-linux/stable
 # alacritty
@@ -25,7 +27,6 @@ sudo DEBIAN_FRONTEND=noninteractive apt install -y apt-fast
 
 # install necessary packages
 sudo apt install -y \
-	fonts-hack-ttf \
 	python3-pip \
 	$downloads/google-chrome.deb \
 	i3-gaps i3status i3lock dmenu \
@@ -36,7 +37,8 @@ sudo apt install -y \
 	tmux \
 	bat \
 	tree \
-	watchman
+	watchman \
+	fonts-firacode
 
 # autotiling for i3
 sudo pip3 install autotiling

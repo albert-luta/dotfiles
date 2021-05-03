@@ -9,5 +9,6 @@ let g:coc_global_extensions=[
 	\ 'coc-prisma',
 	\ 'coc-markdownlint',
 	\ 'coc-styled-components',
-	\ 'coc-cssmodules'
+	\ 'coc-cssmodules',
+	\ 'coc-explorer'
 	\]

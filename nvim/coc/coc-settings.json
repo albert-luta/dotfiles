@@ -1,4 +1,14 @@
 {
+  // Explorer
+  "explorer.quitOnOpen": true,
+  "explorer.file.showHiddenFiles": true,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.icon.enableVimDevicons": true,
+  "explorer.keyMappings.global": {
+    "v": "open:vsplit",
+    "n": "addFile",
+    "N": "addDirectory"
+  },
   // Eslint
   "eslint.autoFixOnSave": true,
   // Prettier
