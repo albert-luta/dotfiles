@@ -395,8 +395,8 @@ dynamic_title: true
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 # Wsl
-shell:
-    program: "C:\\Windows\\System32\\wsl.exe ~"
+# shell:
+#     program: "C:\\Windows\\System32\\wsl.exe ~"
 #  args:
 #    - --login
 

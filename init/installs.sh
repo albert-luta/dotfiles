@@ -41,6 +41,8 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	watchman \
 	fonts-firacode \
 	ripgrep \
+	postgresql postgresql-contrib \
+	xclip \
 	$downloads/google-chrome.deb \
 	$downloads/lsd.deb
 

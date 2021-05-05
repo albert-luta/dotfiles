@@ -35,6 +35,7 @@ For LTS - `nvm install --lts --default && nvm use --lts`
 
 #### Save the key in clipboad
 
+For Linux - `xclip -selection clipboard < ~/.ssh/id_ed25519.pub`
 For Wsl - `cat ~/.ssh/id_ed25519.pub | clip.exe`
 
 #### Add the key on platforms
