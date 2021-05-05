@@ -117,7 +117,7 @@ font:
         # family: UbuntuMono Nerd Font
         # family: Monofur Nerd Font
         # family: TerminessTTF Nerd Font
-        family: FiraCode
+        family: FiraCode Nerd Font
 
         # The `style` can be specified to pick a specific face.
         style: Regular
@@ -136,7 +136,7 @@ font:
         # family: UbuntuMono Nerd Font
         # family: Monofur Nerd Font
         # family: TerminessTTF Nerd Font
-        family: FiraCode
+        family: FiraCode Nerd Font
 
         # The `style` can be specified to pick a specific face.
         style: Bold
@@ -155,10 +155,10 @@ font:
         # family: UbuntuMono Nerd Font
         # family: Monofuritalic Nerd Font Mono
         # family: TerminessTTF Nerd Font
-        family: FiraCode
+        family: FiraCode Nerd Font
 
         # The `style` can be specified to pick a specific face.
-        style: Italic
+        style: Regular
 
     # Bold italic font face
     bold_italic:
@@ -174,10 +174,10 @@ font:
         # family: UbuntuMono Nerd Font
         # family: Monofuritalic Nerd Font Mono
         # family: TerminessTTF Nerd Font
-        family: FiraCode
+        family: FiraCode Nerd Font
 
         # The `style` can be specified to pick a specific face.
-        style: Bold Italic
+        style: Bold
 
     # Point size
     size: 11.0
@@ -214,83 +214,118 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (Tomorrow Night Bright)
+# # Colors (Tomorrow Night Bright)
+# colors:
+#     # Default colors
+#     primary:
+#         background: '0x282c34'
+#         foreground: '0xbbc2cf'
+
+#         # Bright and dim foreground colors
+#         #
+#         # The dimmed foreground color is calculated automatically if it is not present.
+#         # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
+#         # is `false`, the normal foreground color will be used.
+#         #dim_foreground: '0x9a9a9a'
+#         #bright_foreground: '0xffffff'
+
+#     # Cursor colors
+#     #
+#     # Colors which should be used to draw the terminal cursor. If these are unset,
+#     # the cursor color will be the inverse of the cell color.
+#     #cursor:
+#     #  text: '0x000000'
+#     #  cursor: '0xffffff'
+
+#     # Selection colors
+#     #
+#     # Colors which should be used to draw the selection area. If selection
+#     # background is unset, selection color will be the inverse of the cell colors.
+#     # If only text is unset the cell text color will remain the same.
+#     selection:
+#         text: '0x282c34'
+#         background: '0xbbc2cf'
+
+#     # Normal colors
+#     normal:
+#         black: '0x1c1f24'
+#         red: '0xff6c6b'
+#         green: '0x98be65'
+#         yellow: '0xda8548'
+#         blue: '0x51afef'
+#         magenta: '0xc678dd'
+#         cyan: '0x5699af'
+#         white: '0x202328'
+
+#     # Bright colors
+#     bright:
+#         black: '0x5b6268'
+#         red: '0xda8548'
+#         green: '0x4db5bd'
+#         yellow: '0xecbe7b'
+#         blue: '0x3071db' # This is 2257a0 in Doom Emacs but I lightened it.
+#         magenta: '0xa9a1e1'
+#         cyan: '0x46d9ff'
+#         white: '0xdfdfdf'
+
+# Dim colors
+#
+# If the dim colors are not set, they will be calculated automatically based
+# on the `normal` colors.
+#dim:
+#  black:   '0x000000'
+#  red:     '0x8c3336'
+#  green:   '0x7a8530'
+#  yellow:  '0x97822e'
+#  blue:    '0x506d8f'
+#  magenta: '0x80638e'
+#  cyan:    '0x497e7a'
+#  white:   '0x9a9a9a'
+
+# Colors (One Dark)
 colors:
     # Default colors
     primary:
+        foreground: '0xabb2bf'
         background: '0x282c34'
-        foreground: '0xbbc2cf'
-
-        # Bright and dim foreground colors
-        #
-        # The dimmed foreground color is calculated automatically if it is not present.
-        # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-        # is `false`, the normal foreground color will be used.
-        #dim_foreground: '0x9a9a9a'
-        #bright_foreground: '0xffffff'
 
     # Cursor colors
-    #
-    # Colors which should be used to draw the terminal cursor. If these are unset,
-    # the cursor color will be the inverse of the cell color.
-    #cursor:
-    #  text: '0x000000'
-    #  cursor: '0xffffff'
-
-    # Selection colors
-    #
-    # Colors which should be used to draw the selection area. If selection
-    # background is unset, selection color will be the inverse of the cell colors.
-    # If only text is unset the cell text color will remain the same.
-    selection:
-        text: '0xbbc2cf'
-        background: '0x282c34'
+    cursor:
+        text: '0x5c6370'
+        cursor: '0xabb2bf'
 
     # Normal colors
     normal:
-        black: '0x1c1f24'
-        red: '0xff6c6b'
-        green: '0x98be65'
-        yellow: '0xda8548'
-        blue: '0x51afef'
+        black: '0x5c6370'
+        red: '0xe06c75'
+        green: '0x98c379'
+        yellow: '0xe5c07b'
+        blue: '0x61afef'
         magenta: '0xc678dd'
-        cyan: '0x5699af'
-        white: '0x202328'
+        cyan: '0x56b6c2'
+        white: '0xabb2bf'
 
     # Bright colors
     bright:
-        black: '0x5b6268'
-        red: '0xda8548'
-        green: '0x4db5bd'
-        yellow: '0xecbe7b'
-        blue: '0x3071db' # This is 2257a0 in Doom Emacs but I lightened it.
-        magenta: '0xa9a1e1'
-        cyan: '0x46d9ff'
-        white: '0xdfdfdf'
+        black: '0x4b5263'
+        red: '0xbe5046'
+        green: '0x98c379'
+        yellow: '0xd19a66'
+        blue: '0x61afef'
+        magenta: '0xc678dd'
+        cyan: '0x56b6c2'
+        white: '0x3e4452'
 
-    # Dim colors
-    #
-    # If the dim colors are not set, they will be calculated automatically based
-    # on the `normal` colors.
-    #dim:
-    #  black:   '0x000000'
-    #  red:     '0x8c3336'
-    #  green:   '0x7a8530'
-    #  yellow:  '0x97822e'
-    #  blue:    '0x506d8f'
-    #  magenta: '0x80638e'
-    #  cyan:    '0x497e7a'
-    #  white:   '0x9a9a9a'
-
-    # Indexed Colors
-    #
-    # The indexed colors include all colors from 16 to 256.
-    # When these are not set, they're filled with sensible defaults.
-    #
-    # Example:
-    #   `- { index: 16, color: '0xff00ff' }`
-    #
-    #indexed_colors: []
+# Indexed Colors
+#
+# The indexed colors include all colors from 16 to 256.
+# When these are not set, they're filled with sensible defaults.
+#
+# Example:
+#   `- { index: 16, color: '0xff00ff' }`
+#
+#indexed_colors: []
+# Colors (One Dark)
 
 # Visual Bell
 #
@@ -359,8 +394,9 @@ dynamic_title: true
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-#shell:
-#  program: /bin/bash
+# Wsl
+shell:
+    program: "C:\\Windows\\System32\\wsl.exe ~"
 #  args:
 #    - --login
 
@@ -567,18 +603,18 @@ key_bindings:
     # (Windows, Linux, and BSD only)
     - { key: V, mods: Control|Shift, action: Paste }
     - { key: C, mods: Control|Shift, action: Copy }
-    - { key: Insert, mods: Shift, action: PasteSelection }
-    - { key: Key0, mods: Control, action: ResetFontSize }
-    - { key: Equals, mods: Control, action: IncreaseFontSize }
-    - { key: Plus, mods: Control, action: IncreaseFontSize }
-    - { key: Minus, mods: Control, action: DecreaseFontSize }
+    # - { key: Insert, mods: Shift, action: PasteSelection }
+    # - { key: Key0, mods: Control, action: ResetFontSize }
+    # - { key: Equals, mods: Control, action: IncreaseFontSize }
+    # - { key: Plus, mods: Control, action: IncreaseFontSize }
+    # - { key: Minus, mods: Control, action: DecreaseFontSize }
 
     - { key: Paste, action: Paste }
     - { key: Copy, action: Copy }
     - { key: L, mods: Control, action: ClearLogNotice }
     - { key: L, mods: Control, chars: "\x0c" }
-    - { key: PageUp, mods: Shift, action: ScrollPageUp, mode: ~Alt }
-    - { key: PageDown, mods: Shift, action: ScrollPageDown, mode: ~Alt }
-    - { key: Home, mods: Shift, action: ScrollToTop, mode: ~Alt }
-    - { key: End, mods: Shift, action: ScrollToBottom, mode: ~Alt }
-
+    - { key: Space, mods: Control, chars: "\x00" }
+    # - { key: PageUp, mods: Shift, action: ScrollPageUp, mode: ~Alt }
+    # - { key: PageDown, mods: Shift, action: ScrollPageDown, mode: ~Alt }
+    # - { key: Home, mods: Shift, action: ScrollToTop, mode: ~Alt }
+    # - { key: End, mods: Shift, action: ScrollToBottom, mode: ~Alt }
