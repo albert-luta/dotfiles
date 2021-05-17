@@ -32,5 +32,13 @@
   // Css Modules
   "cssmodules.camelCase": true,
   // Auto Pairs
-  "pairs.disableLanguages": ["html"]
+  "pairs.disableLanguages": ["html"],
+  "pairs.enableCharacters": [
+  	"(",
+  	"[",
+  	"{",
+  	"'",
+  	"\"",
+  	"`"
+  ]
 }
