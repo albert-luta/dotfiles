@@ -1,3 +1,9 @@
+" Navigation
+nnoremap [b :bp <CR>
+nnoremap ]b :bn <CR>
+nnoremap [B :bf <CR>
+nnoremap ]B :bl <CR>
+
 " Coc-Explorer
 nnoremap <space>e :CocCommand explorer<CR>
 
