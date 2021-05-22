@@ -25,6 +25,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-commentary'
 " Html/Jsx auto-close tags
 Plug 'alvan/vim-closetag'
+" Surround
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
