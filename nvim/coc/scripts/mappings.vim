@@ -4,6 +4,16 @@ nnoremap ]b :bn <CR>
 nnoremap [B :bf <CR>
 nnoremap ]B :bl <CR>
 
+" Vim-fugitive
+nnoremap <leader>gs :G<CR>
+command! -nargs=* Ga :G add <args>
+command! -nargs=* Gc :G commit <args>
+command! -nargs=* Gps :G push <args>
+command! -nargs=* Gpl :G pull <args>
+command! -nargs=* Gco :G checkout <args>
+command! -nargs=* Gb :G branch <args>
+command! -nargs=* Gl :G log <args>
+
 " Coc-Explorer
 nnoremap <space>e :CocCommand explorer<CR>
 
