@@ -27,6 +27,8 @@ Plug 'tpope/vim-commentary'
 Plug 'alvan/vim-closetag'
 " Surround
 Plug 'tpope/vim-surround'
+" Auto-rename html-jsx tags
+Plug 'AndrewRadev/tagalong.vim'
 
 call plug#end()
 
