@@ -40,6 +40,7 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	bat \
 	watchman \
 	fonts-firacode \
+	fonts-hack \
 	ripgrep \
 	postgresql postgresql-contrib \
 	xclip \

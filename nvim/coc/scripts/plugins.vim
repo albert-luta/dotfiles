@@ -4,8 +4,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Prisma syntax highlighting
 Plug 'pantharshit00/vim-prisma'
-" Dev icons
-Plug 'ryanoasis/vim-devicons'
 " Better syntax highlighting
 Plug 'sheerun/vim-polyglot'
 " Theme
@@ -29,6 +27,8 @@ Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 " Auto-rename html-jsx tags
 Plug 'AndrewRadev/tagalong.vim'
+" Dev icons
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
