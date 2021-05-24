@@ -10,7 +10,7 @@ My configuration for a fresh ubuntu(or ubuntu based) install
 
 ### 2. Install git
 
-`sudo apt install git` Enter your password
+`sudo apt install git -y` Enter your password
 
 ### 3. Clone the repository
 
