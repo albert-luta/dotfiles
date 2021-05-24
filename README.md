@@ -8,19 +8,23 @@ My configuration for a fresh ubuntu(or ubuntu based) install
 
 `cd`
 
-### 2. Clone the repository
+### 2. Install git
+
+`sudo apt install git` Enter your password
+
+### 3. Clone the repository
 
 `git clone https://github.com/lutaalbert/dotfiles.git`
 
-### 3. Run the initialization file
+### 4. Run the initialization file
 
 `bash dotfiles/init.sh` Enter your password when asked(possible multiple times)
 
-### 4. Install node
+### 5. Install node
 
 For LTS - `nvm install --lts --default && nvm use --lts`
 
-### 5. Install nvim plugins
+### 6. Install nvim plugins
 
 #### Coc
 
@@ -29,9 +33,9 @@ For LTS - `nvm install --lts --default && nvm use --lts`
 
 #### Lua
 
-### 6. Reboot
+### 7. Reboot
 
-### 7. Add the generated ssh key on platforms(github, gitlab etc)
+### 8. Add the generated ssh key on platforms(github, gitlab etc)
 
 #### Save the key in clipboad
 
