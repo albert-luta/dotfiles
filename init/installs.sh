@@ -46,6 +46,7 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	xclip \
 	htop \
 	$downloads/google-chrome.deb \
+	firefox \
 	$downloads/lsd.deb
 
 # autotiling for i3
