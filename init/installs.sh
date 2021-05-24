@@ -43,6 +43,7 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	ripgrep \
 	postgresql postgresql-contrib \
 	xclip \
+	htop \
 	$downloads/google-chrome.deb \
 	$downloads/lsd.deb
 
