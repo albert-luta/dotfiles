@@ -155,11 +155,11 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # bind workspaces to monitor
-workspace 1 output HDMI-A-0
-workspace 2 output eDP
-workspace 3 output eDP
-workspace 9 output eDP
-workspace 10 output eDP
+workspace $ws1 output HDMI-A-0
+workspace $ws2 output eDP
+workspace $ws3 output eDP
+workspace $ws9 output eDP
+workspace $ws10 output eDP
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
