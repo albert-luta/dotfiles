@@ -1,11 +1,12 @@
 #!/bin/bash
 
+[ ! -d $HOME/Downloads ] && mkdir -p $HOME/Downloads
+[ ! -d $HOME/.config ] && mkdir -p $HOME/.config
+
 downloads=$HOME/Downloads
 config=$HOME/.config
 
 # add necessary ppas
-# firacode
-sudo add-apt-repository -y universe
 # i3-gaps
 sudo add-apt-repository -y ppa:regolith-linux/stable
 # alacritty
@@ -39,8 +40,6 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	tmux \
 	bat \
 	watchman \
-	fonts-firacode \
-	fonts-hack \
 	ripgrep \
 	postgresql postgresql-contrib \
 	xclip \
@@ -49,6 +48,8 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	firefox \
 	$downloads/lsd.deb
 
+# fonts
+. fonts/installs.sh
 # autotiling for i3
 sudo pip3 install autotiling
 # zsh
