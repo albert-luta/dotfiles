@@ -22,6 +22,8 @@ curl -fL https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.d
 curl -fL https://github.com/Peltoche/lsd/releases/download/0.20.1/lsd_0.20.1_amd64.deb --create-dirs -o $downloads/lsd.deb
 # discord
 curl -fL https://discordapp.com/api/download?platform=linux&format=deb --create-dirs -o $downloads/discord.deb
+# vs-code
+curl -fL https://go.microsoft.com/fwlink/?LinkID=760868 --create-dirs -o $downloads/vs-code.deb
 
 # update sources
 sudo apt update --fix-missing
@@ -49,7 +51,8 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	$downloads/google-chrome.deb \
 	firefox \
 	$downloads/lsd.deb \
-	$downloads/discord.deb
+	$downloads/discord.deb \
+	$downloads/vs-code.deb
 
 # fonts
 . fonts/installs.sh
