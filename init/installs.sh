@@ -14,12 +14,14 @@ sudo add-apt-repository -y ppa:aslatter/ppa
 # apt-fast
 sudo add-apt-repository -y ppa:apt-fast/stable
 # z
-curl https://raw.githubusercontent.com/rupa/z/master/z.sh --create-dirs -o $config/z/z.sh
+curl -fL https://raw.githubusercontent.com/rupa/z/master/z.sh --create-dirs -o $config/z/z.sh
 touch $HOME/.z
 # google-chrome
-curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --create-dirs -o $downloads/google-chrome.deb
+curl -fL https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --create-dirs -o $downloads/google-chrome.deb
 # lsd
-curl -L https://github.com/Peltoche/lsd/releases/download/0.20.1/lsd_0.20.1_amd64.deb --create-dirs -o $downloads/lsd.deb
+curl -fL https://github.com/Peltoche/lsd/releases/download/0.20.1/lsd_0.20.1_amd64.deb --create-dirs -o $downloads/lsd.deb
+# discord
+curl -fL https://discordapp.com/api/download?platform=linux&format=deb --create-dirs -o $downloads/discord.deb
 
 # update sources
 sudo apt update --fix-missing
@@ -46,7 +48,8 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	htop \
 	$downloads/google-chrome.deb \
 	firefox \
-	$downloads/lsd.deb
+	$downloads/lsd.deb \
+	$downloads/discord.deb
 
 # fonts
 . fonts/installs.sh
