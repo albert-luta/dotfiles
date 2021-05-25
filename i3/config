@@ -4,8 +4,8 @@ exec_always --no-startup-id autotiling
 smart_gaps on
 smart_borders on
 
-# gaps inner 10
-# gaps outer 20
+gaps inner 10
+# gaps outer 5
 
 # It will not be overwritten, so edit it as you like.
 #
@@ -119,16 +119,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:  Code"
-set $ws2 "2:  Chrome"
-set $ws3 "3:  Design"
-set $ws4 "4:  Docs"
+set $ws1 "1: Code"
+set $ws2 "2: Docs"
+set $ws3 "3: Design"
+set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10:  Random"
+set $ws10 "10: Social"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -153,6 +153,12 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# bind workspaces to monitor
+workspace 1 output HDMI-A-0
+workspace 2 output eDP
+workspace 3 output eDP
+workspace 10 output eDP
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
