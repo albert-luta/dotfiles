@@ -158,6 +158,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 workspace 1 output HDMI-A-0
 workspace 2 output eDP
 workspace 3 output eDP
+workspace 9 output eDP
 workspace 10 output eDP
 
 # reload the configuration file
