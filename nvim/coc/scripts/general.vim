@@ -3,6 +3,9 @@ syntax on
 set nocompatible
 filetype plugin indent on
 
+" Prevent space from moving cursor forward in normal mode
+nnoremap <SPACE> <Nop>
+
 set completeopt=menuone,noinsert,noselect
 " Tabs
 set tabstop=4
