@@ -47,6 +47,7 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	ripgrep \
 	postgresql postgresql-contrib \
 	xclip \
+	flameshot \
 	htop \
 	$downloads/google-chrome.deb \
 	firefox \
