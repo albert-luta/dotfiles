@@ -127,7 +127,7 @@ set $ws2 "2: Test"
 set $ws3 "3: Docs"
 set $ws4 "4: Design"
 set $ws5 "5: Random"
-set $ws6 "6"
+set $ws6 "6: Entertainment Big Screen"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9: Entertainment"
@@ -162,6 +162,7 @@ workspace $ws1 output HDMI-A-0
 workspace $ws2 output eDP
 workspace $ws3 output eDP
 workspace $ws5 output eDP
+workspace $ws6 output HDMI-A-0
 workspace $ws9 output eDP
 workspace $ws10 output eDP
 
