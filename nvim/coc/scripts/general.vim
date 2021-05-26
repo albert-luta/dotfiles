@@ -24,6 +24,5 @@ set backspace=indent,eol,start
 set wildmode=longest,list,full
 set splitbelow splitright
 set scrolloff=8
-highlight colorcolumn ctermbg=0 guibg=lightgrey
 set clipboard=unnamedplus
 
