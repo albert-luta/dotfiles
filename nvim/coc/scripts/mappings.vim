@@ -1,3 +1,6 @@
+" Reload(resource) config
+command! -nargs=0 Reload :so ~/.config/nvim/init.vim
+
 " Navigation
 nnoremap [b :bp <CR>
 nnoremap ]b :bn <CR>
