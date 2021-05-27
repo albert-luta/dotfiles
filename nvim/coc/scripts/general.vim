@@ -25,4 +25,3 @@ set wildmode=longest,list,full
 set splitbelow splitright
 set scrolloff=8
 set clipboard=unnamedplus
-

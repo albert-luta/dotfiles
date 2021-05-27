@@ -29,6 +29,8 @@ Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/tagalong.vim'
 " Dev icons
 Plug 'ryanoasis/vim-devicons'
+" Editor config
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
