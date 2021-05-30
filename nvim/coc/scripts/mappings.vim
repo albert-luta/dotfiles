@@ -27,8 +27,7 @@ vmap <C-_> gc
 nnoremap <silent> <ESC> :noh<CR><ESC>
 
 " Fzf
-nnoremap <silent> <C-p> :GFiles<CR>
-nnoremap <silent> <C-b> :Buffers<CR>
+nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <C-f> :Rg<CR>
 
 " Coc
