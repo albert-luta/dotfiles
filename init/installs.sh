@@ -14,16 +14,16 @@ sudo add-apt-repository -y ppa:aslatter/ppa
 # apt-fast
 sudo add-apt-repository -y ppa:apt-fast/stable
 # z
-curl -fL https://raw.githubusercontent.com/rupa/z/master/z.sh --create-dirs -o $config/z/z.sh
+curl -fL "https://raw.githubusercontent.com/rupa/z/master/z.sh" --create-dirs -o $config/z/z.sh
 touch $HOME/.z
 # google-chrome
-curl -fL https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --create-dirs -o $downloads/google-chrome.deb
+curl -fL "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" --create-dirs -o $downloads/google-chrome.deb
 # lsd
-curl -fL https://github.com/Peltoche/lsd/releases/download/0.20.1/lsd_0.20.1_amd64.deb --create-dirs -o $downloads/lsd.deb
+curl -fL "https://github.com/Peltoche/lsd/releases/download/0.20.1/lsd_0.20.1_amd64.deb" --create-dirs -o $downloads/lsd.deb
 # discord
-curl -fL https://discordapp.com/api/download?platform=linux&format=deb --create-dirs -o $downloads/discord.deb
+curl -fL "https://discordapp.com/api/download?platform=linux&format=deb" --create-dirs -o $downloads/discord.deb
 # vs-code
-curl -fL https://go.microsoft.com/fwlink/?LinkID=760868 --create-dirs -o $downloads/vs-code.deb
+curl -fL "https://go.microsoft.com/fwlink/?LinkID=760868" --create-dirs -o $downloads/vs-code.deb
 
 # update sources
 sudo apt update --fix-missing
