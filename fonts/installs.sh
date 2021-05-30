@@ -1,5 +1,7 @@
 [ ! -d $HOME/.local/share/fonts ] && mkdir -p $HOME/.local/share/fonts
 
+downloads=$HOME/Downloads
+
 # hack
 curl -fL "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip" --create-dirs -o $download/fonts/hack.zip
 unzip $download/fonts/hack.zip  -d $HOME/.local/share/fonts/hack/
