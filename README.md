@@ -37,7 +37,7 @@ For LTS - `nvm install --lts --default && nvm use --lts`
 
 ### 8. Add the generated ssh key on platforms(github, gitlab etc)
 
-#### Save the key in clipboad
+#### Copy the key in clipboard
 
 For Linux - `xclip -selection clipboard < ~/.ssh/id_ed25519.pub`
 
