@@ -53,7 +53,8 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	firefox \
 	$downloads/lsd.deb \
 	$downloads/discord.deb \
-	$downloads/vs-code.deb
+	$downloads/vs-code.deb \
+	clangd
 
 # fonts
 . fonts/installs.sh

@@ -21,6 +21,7 @@
     "typescript",
     "typescriptreact",
     "json",
+    "jsonc",
     "graphql",
     // I don't know if the following works
     "html",
@@ -33,12 +34,7 @@
   "cssmodules.camelCase": true,
   // Auto Pairs
   "pairs.disableLanguages": ["html"],
-  "pairs.enableCharacters": [
-  	"(",
-  	"[",
-  	"{",
-  	"'",
-  	"\"",
-  	"`"
-  ]
+  "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
+  // Clangd
+  "clangd.disableSnippetCompletion": true
 }

@@ -16,15 +16,15 @@ My configuration for a fresh ubuntu(or ubuntu based) install
 
 `git clone https://github.com/lutaalbert/dotfiles.git`
 
-### 4. Run the initialization file
+### 4. Run the initialization script
 
 `bash dotfiles/init.sh` Enter your password when asked(possible multiple times)
 
 ### 5. Reboot
 
-### 6. Install node
+### 6. Run the post reboot script
 
-For LTS - `nvm install --lts --default && nvm use --lts`
+`bash dotfiles/post-reboot.sh`
 
 ### 7. Install nvim plugins
 

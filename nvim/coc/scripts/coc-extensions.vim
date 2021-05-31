@@ -1,5 +1,6 @@
 let g:coc_global_extensions=[
 	\ 'coc-pairs',
+	\ 'coc-sh',
 	\ 'coc-tsserver',
 	\ 'coc-eslint',
 	\ 'coc-prettier',
@@ -10,5 +11,6 @@ let g:coc_global_extensions=[
 	\ 'coc-markdownlint',
 	\ 'coc-styled-components',
 	\ 'coc-cssmodules',
-	\ 'coc-explorer'
+	\ 'coc-explorer',
+	\ 'coc-clangd'
 	\]
