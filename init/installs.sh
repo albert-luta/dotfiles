@@ -54,7 +54,7 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	$downloads/lsd.deb \
 	$downloads/discord.deb \
 	$downloads/vs-code.deb \
-	clangd
+	gcc clangd
 
 # fonts
 . fonts/installs.sh
