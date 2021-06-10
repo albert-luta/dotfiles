@@ -3,6 +3,7 @@ alias v='nvim'
 alias cl='clear'
 alias apt='apt-fast'
 alias cat='batcat'
+alias open='xdg-open'
 
 # ls
 alias l='lsd -l'

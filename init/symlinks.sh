@@ -18,13 +18,16 @@ ln -sf $root/alacritty/* $HOME/.config/alacritty/
 ln -sf $root/i3/* $HOME/.config/i3/
 
 # shell
-ln -sf $root/shell/.common_aliases $HOME/.common_aliases
+ln -sf $root/shell/.shared_aliases $HOME/.shared_aliases
+ln -sf $root/shell/.shared_commands.sh $HOME/.shared_commands.sh
 # bash
 ln -sf $root/shell/bash/.bashrc $HOME/.bashrc
 ln -sf $root/shell/bash/.bash_aliases $HOME/.bash_aliases
+ln -sf $root/shell/bash/.bash_commands.sh $HOME/.bash_commands.sh
 # zsh
 ln -sf $root/shell/zsh/.zshrc $HOME/.zshrc
 ln -sf $root/shell/zsh/.zsh_aliases $HOME/.zsh_aliases
+ln -sf $root/shell/zsh/.zsh_commands.sh $HOME/.zsh_commands.sh
 [ ! -d $HOME/.zsh_functions ] && mkdir -p $HOME/.zsh_functions
 ln -sf $root/shell/zsh/.zsh_functions/* $HOME/.zsh_functions/
 # p10k

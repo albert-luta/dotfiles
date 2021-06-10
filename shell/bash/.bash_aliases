@@ -1,2 +1,2 @@
-. ~/.common_aliases
+. ~/.shared_aliases
 

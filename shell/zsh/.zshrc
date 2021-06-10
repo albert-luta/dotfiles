@@ -30,8 +30,15 @@ else
   export EDITOR='nvim'
 fi
 
+
 # Aliases
-. ~/.zsh_aliases
+if [ -f ~/.zsh_aliases ]; then
+    . ~/.zsh_aliases
+fi
+# Commands
+if [ -f ~/.zsh_commands.sh ]; then
+    . ~/.zsh_commands.sh
+fi
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
