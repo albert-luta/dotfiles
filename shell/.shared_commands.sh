@@ -1,3 +1,4 @@
 function open {
-	xdg-open $1 &	
+	(xdg-open "$*" &> /dev/null &)
 }
+
