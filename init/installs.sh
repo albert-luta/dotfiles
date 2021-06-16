@@ -56,7 +56,7 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	$downloads/vs-code.deb \
 	gcc clangd \
 	pinta \
-	texlive latexmk zathura 
+	texlive-full latexmk zathura 
 
 # fonts
 . fonts/installs.sh
