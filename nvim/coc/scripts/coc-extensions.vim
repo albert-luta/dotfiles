@@ -12,5 +12,6 @@ let g:coc_global_extensions=[
 	\ 'coc-styled-components',
 	\ 'coc-cssmodules',
 	\ 'coc-explorer',
-	\ 'coc-clangd'
+	\ 'coc-clangd',
+	\ 'coc-vimtex'
 	\]

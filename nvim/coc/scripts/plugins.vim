@@ -31,6 +31,8 @@ Plug 'AndrewRadev/tagalong.vim'
 Plug 'ryanoasis/vim-devicons'
 " Editor config
 Plug 'editorconfig/editorconfig-vim'
+" LaTeX
+Plug 'lervag/vimtex'
 
 call plug#end()
 
