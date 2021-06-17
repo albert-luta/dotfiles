@@ -1,4 +1,5 @@
 let mapleader=" "
+let maplocalleader=" "
 syntax on
 set nocompatible
 filetype plugin indent on
