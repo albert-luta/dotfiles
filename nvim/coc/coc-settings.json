@@ -3,7 +3,7 @@
   "explorer.quitOnOpen": true,
   "explorer.file.showHiddenFiles": true,
   "explorer.icon.enableNerdfont": true,
-  "explorer.icon.enableVimDevicons": true,
+  "explorer.icon.source": "vim-devicons",
   "explorer.keyMappings.global": {
     "v": "open:vsplit",
     "n": "addFile",
