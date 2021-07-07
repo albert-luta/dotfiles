@@ -55,8 +55,9 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	$downloads/discord.deb \
 	$downloads/vs-code.deb \
 	gcc clangd \
-	pinta \
-	texlive-full latexmk zathura 
+	mypaint \
+	texlive-full latexmk zathura \
+	cloc
 
 # fonts
 . fonts/installs.sh
