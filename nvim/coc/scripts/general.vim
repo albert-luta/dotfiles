@@ -27,3 +27,4 @@ set splitbelow splitright
 set scrolloff=8
 set clipboard=unnamedplus
 set cursorline
+
