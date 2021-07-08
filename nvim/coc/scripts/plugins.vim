@@ -36,3 +36,11 @@ Plug 'lervag/vimtex'
 
 call plug#end()
 
+" New plugin update is broken
+" Rollback to previous version
+" 1. Comment out Plug 'neoclide/coc.nvim'
+" 2. Run :source % (or reload vim)
+" 3. Run :PlugClean and remove the coc.nvim install
+" 4. Uncomment out the Plug line with the commit hash that you want (e.g., Plug 'neoclide/coc.nvim', {'commit': '153fdc4223594f8079e4025e919605fffd75f6a4'})
+" 5. Run :PlugInstall
+
