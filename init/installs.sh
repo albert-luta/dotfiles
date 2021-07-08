@@ -57,7 +57,8 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	gcc clangd \
 	mypaint \
 	texlive-full latexmk zathura \
-	cloc
+	cloc \
+	gpick
 
 # fonts
 . fonts/installs.sh
