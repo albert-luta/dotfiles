@@ -5,7 +5,7 @@ nvm install --lts --default
 nvm use --lts
 
 # Install npm packages
-npm i -g neovim pnpm
+npm i -g neovim pnpm yarn
 
 # Install pnpm tab completion
 pnpm install-completion bash
