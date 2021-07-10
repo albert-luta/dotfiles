@@ -5,5 +5,5 @@ nvm install --lts --default
 nvm use --lts
 
 # Install npm packages
-npm i -g neovim
+npm i -g neovim pnpm
 
