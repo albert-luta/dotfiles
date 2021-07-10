@@ -7,3 +7,7 @@ nvm use --lts
 # Install npm packages
 npm i -g neovim pnpm
 
+# Install pnpm tab completion
+pnpm install-completion bash
+pnpm install-completion zsh
+
