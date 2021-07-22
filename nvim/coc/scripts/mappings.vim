@@ -9,6 +9,9 @@ nnoremap ]B :bl <CR>
 
 " Vim-fugitive
 nnoremap <leader>gs :G<CR>
+nnoremap <leader>gh :diffget //2<CR>
+nnoremap <leader>gl :diffget //3<CR>
+nnoremap <leader>gw :Gwrite!<CR>
 command! -nargs=* Ga :G add <args>
 command! -nargs=* Gc :G commit <args>
 command! -nargs=* Gps :G push <args>
