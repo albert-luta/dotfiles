@@ -59,7 +59,8 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	texlive-full latexmk zathura \
 	cloc \
 	gpick \
-	software-properties-common
+	software-properties-common \
+	kazam
 
 # fonts
 . fonts/installs.sh
