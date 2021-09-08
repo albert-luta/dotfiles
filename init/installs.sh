@@ -60,8 +60,7 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	cloc \
 	gpick \
 	software-properties-common \
-	kazam \
-	gparted
+	kazam
 
 # fonts
 . fonts/installs.sh
