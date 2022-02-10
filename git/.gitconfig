@@ -2,3 +2,5 @@
 	name = Albert Luta
 	email = luta.albert100@gmail.com
 
+[init]
+	defaultBranch = main
