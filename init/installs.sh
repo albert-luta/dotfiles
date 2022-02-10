@@ -13,6 +13,8 @@ sudo add-apt-repository -y ppa:regolith-linux/stable
 sudo add-apt-repository -y ppa:aslatter/ppa
 # apt-fast
 sudo add-apt-repository -y ppa:apt-fast/stable
+# git
+sudo add-apt-repository -y ppa:git-core/ppa
 # z
 curl -fL "https://raw.githubusercontent.com/rupa/z/master/z.sh" --create-dirs -o $config/z/z.sh
 touch $HOME/.z
