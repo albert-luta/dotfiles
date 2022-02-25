@@ -59,6 +59,9 @@ bindsym $mod+c exec code
 # start discord
 bindsym $mod+d exec discord
 
+# start slack
+bindsym $mod+s exec slack
+
 # kill focused window
 bindsym $mod+q kill
 
@@ -101,7 +104,7 @@ bindsym $mod+n split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+s fullscreen toggle
+bindsym $mod+o fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 # bindsym $mod+s layout stacking
