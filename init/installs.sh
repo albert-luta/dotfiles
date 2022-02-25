@@ -24,6 +24,8 @@ curl -fL "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.
 curl -fL "https://github.com/Peltoche/lsd/releases/download/0.20.1/lsd_0.20.1_amd64.deb" --create-dirs -o $downloads/lsd.deb
 # discord
 curl -fL "https://discordapp.com/api/download?platform=linux&format=deb" --create-dirs -o $downloads/discord.deb
+# slack
+curl -fL "https://downloads.slack-edge.com/releases/linux/4.23.0/prod/x64/slack-desktop-4.23.0-amd64.deb" --create-dirs -o $downloads/slack.deb
 # vs-code
 curl -fL "https://go.microsoft.com/fwlink/?LinkID=760868" --create-dirs -o $downloads/vs-code.deb
 
@@ -55,6 +57,7 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	firefox \
 	$downloads/lsd.deb \
 	$downloads/discord.deb \
+	$downloads/slack.deb \
 	$downloads/vs-code.deb \
 	gcc clangd \
 	mypaint \
