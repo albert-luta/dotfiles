@@ -36,7 +36,5 @@
   "pairs.disableLanguages": ["html"],
   "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
   // Clangd
-  "clangd.disableSnippetCompletion": true,
-  // Temporary workaround for prisma linting
-  "prisma.prismaFmtBinPath": ""
+  "clangd.disableSnippetCompletion": true
 }
