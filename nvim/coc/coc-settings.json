@@ -26,8 +26,7 @@
     "html",
     "css",
     "scss",
-    "markdown",
-    "prisma"
+    "markdown"
   ],
   // Css Modules
   "cssmodules.camelCase": true,

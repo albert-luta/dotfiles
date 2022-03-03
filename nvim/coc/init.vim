@@ -8,6 +8,7 @@ source $HOME/.config/nvim/scripts/fzf.vim
 source $HOME/.config/nvim/scripts/html-jsx-auto-close-tags.vim
 source $HOME/.config/nvim/scripts/editor-config.vim
 source $HOME/.config/nvim/scripts/latex.vim
+source $HOME/.config/nvim/scripts/prisma.vim
 " Insert new configs above this line
 source $HOME/.config/nvim/scripts/mappings.vim
 
