@@ -4,5 +4,5 @@ xset -dpms
 xset s noblank
 
 # Configure external monitor(s) position
-xrandr --output HDMI-A-0 --right-of eDP
+xrandr --output HDMI-A-0 --left-of eDP
 
