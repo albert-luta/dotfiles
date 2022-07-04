@@ -28,6 +28,8 @@ curl -fL "https://discordapp.com/api/download?platform=linux&format=deb" --creat
 curl -fL "https://downloads.slack-edge.com/releases/linux/4.23.0/prod/x64/slack-desktop-4.23.0-amd64.deb" --create-dirs -o $downloads/slack.deb
 # vs-code
 curl -fL "https://go.microsoft.com/fwlink/?LinkID=760868" --create-dirs -o $downloads/vs-code.deb
+# team-viewer
+curl -fL "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb" --create-dirs -o $downloads/team-viewer.deb
 
 # update sources
 sudo apt update --fix-missing
@@ -65,7 +67,8 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	cloc \
 	gpick \
 	software-properties-common \
-	kazam
+	kazam \
+	$downloads/team-viewer.deb
 
 # fonts
 . fonts/installs.sh
