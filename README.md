@@ -6,25 +6,35 @@ My configuration for a fresh ubuntu(or ubuntu based) install
 
 ### 1. Open the terminal and make sure you are in the home directory
 
-`cd`
+```shell
+cd
+```
 
 ### 2. Install git
 
-`sudo apt install git -y` Enter your password
+```shell
+sudo apt install git -y # Enter your password
+```
 
 ### 3. Clone the repository
 
-`git clone https://github.com/lutaalbert/dotfiles.git`
+```shell
+git clone https://github.com/lutaalbert/dotfiles.git
+```
 
 ### 4. Run the initialization script
 
-`bash dotfiles/init.sh` Enter your password when asked(possible multiple times)
+```shell
+bash dotfiles/init.sh # Enter your password when asked (possible multiple times)
+```
 
 ### 5. Reboot
 
 ### 6. Run the post reboot script
 
-`bash dotfiles/post-reboot.sh`
+```shell
+bash dotfiles/post-reboot.sh
+```
 
 ### 7. Install nvim plugins
 
@@ -39,9 +49,17 @@ My configuration for a fresh ubuntu(or ubuntu based) install
 
 #### Copy the ssh key in clipboard
 
-For Linux - `xclip -selection clipboard < ~/.ssh/id_ed25519.pub`
+**Linux**
 
-For Wsl - `cat ~/.ssh/id_ed25519.pub | clip.exe`
+```shell
+xclip -selection clipboard < ~/.ssh/id_ed25519.pub
+```
+
+**Wsl**
+
+```shell
+cat ~/.ssh/id_ed25519.pub | clip.exe
+```
 
 #### Add the ssh key on platforms
 
@@ -49,7 +67,9 @@ For Wsl - `cat ~/.ssh/id_ed25519.pub | clip.exe`
 
 #### Switch dotfiles repo connection from https to ssh
 
-`cd ~/dotfiles && git remote set-url origin git@github.com:lutaalbert/dotfiles.git && git push -u origin master` Type 'yes(Enter)'
+```shell
+cd ~/dotfiles && git remote set-url origin git@github.com:lutaalbert/dotfiles.git && git push -u origin master # Type 'yes (Enter)'
+```
 
 ### 9. Add the generated gpg key on platforms(github, gitlab etc)
 
@@ -58,19 +78,19 @@ For Wsl - `cat ~/.ssh/id_ed25519.pub | clip.exe`
 Look at step 3 [here](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key).
 
 ```shell
-  gpg --list-secret-keys --keyid-format=long
+gpg --list-secret-keys --keyid-format=long
 ```
 
 #### Set the git signing key
 
 ```shell
-  git config --global user.signingkey <key-id>
+git config --global user.signingkey <key-id>
 ```
 
 #### Copy the gpg key in clipboard
 
 ```shell
-  gpg --armor --export <key-id> | xclip -selection clipboard
+gpg --armor --export <key-id> | xclip -selection clipboard
 ```
 
 #### Add the gpg key on platforms
