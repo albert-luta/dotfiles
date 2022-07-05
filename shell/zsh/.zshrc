@@ -13,6 +13,7 @@ export NVM_LAZY_LOAD_EXTRA_COMMANDS=('nvim')
 plugins=(
 	zsh-nvm
 	ssh-agent
+	gpg-agent
 	git
 	npm
 	colored-man-pages

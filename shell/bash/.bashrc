@@ -133,6 +133,9 @@ export NVM_DIR="$HOME/.nvm"
 # Z
 . ~/.config/z/z.sh
 
+# GPG
+export GPG_TTY=$(tty)
+
 
 # tabtab source for packages
 # uninstall by removing these lines

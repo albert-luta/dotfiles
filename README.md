@@ -37,16 +37,42 @@ My configuration for a fresh ubuntu(or ubuntu based) install
 
 ### 8. Add the generated ssh key on platforms(github, gitlab etc)
 
-#### Copy the key in clipboard
+#### Copy the ssh key in clipboard
 
 For Linux - `xclip -selection clipboard < ~/.ssh/id_ed25519.pub`
 
 For Wsl - `cat ~/.ssh/id_ed25519.pub | clip.exe`
 
-#### Add the key on platforms
+#### Add the ssh key on platforms
 
 - [github](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 
-#### (Optional) Switch dotfiles repo connection from https to ssh
+#### Switch dotfiles repo connection from https to ssh
 
 `cd ~/dotfiles && git remote set-url origin git@github.com:lutaalbert/dotfiles.git && git push -u origin master` Type 'yes(Enter)'
+
+### 9. Add the generated gpg key on platforms(github, gitlab etc)
+
+#### Find the gpg key id
+
+Look at step 3 [here](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key).
+
+```shell
+  gpg --list-secret-keys --keyid-format=long
+```
+
+#### Set the git signing key
+
+```shell
+  git config --global user.signingkey <key-id>
+```
+
+#### Copy the gpg key in clipboard
+
+```shell
+  gpg --armor --export <key-id> | xclip -selection clipboard
+```
+
+#### Add the gpg key on platforms
+
+- [github](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-new-gpg-key-to-your-github-account)

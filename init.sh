@@ -8,6 +8,7 @@ cd $root
 
 # Run the scripts
 . init/generate-ssh.sh
+. init/generate-gpg.sh
 . init/installs.sh
 . init/symlinks.sh
 . init/post-install.sh
