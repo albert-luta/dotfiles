@@ -7,7 +7,7 @@ Plug 'pantharshit00/vim-prisma'
 " Better syntax highlighting
 Plug 'sheerun/vim-polyglot'
 " Theme
-Plug 'joshdick/onedark.vim'
+Plug 'joshdick/onedark.vim', { 'branch': 'main' }
 " Status line
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
