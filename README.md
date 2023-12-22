@@ -24,6 +24,9 @@ git clone https://github.com/lutaalbert/dotfiles.git
 
 ### 4. Run the initialization script
 
+Might see a `virtualbox-ext-pack` PUEL license pop-up, press `ESC`, select `YES`
+and press `Enter` to accept it.
+
 ```shell
 bash dotfiles/init.sh # Enter your password when asked (possible multiple times)
 ```

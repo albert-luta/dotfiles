@@ -68,7 +68,8 @@ sudo apt install -yf -o Dpkg::Options::="--force-overwrite" \
 	gpick \
 	software-properties-common \
 	kazam \
-	$downloads/team-viewer.deb
+	$downloads/team-viewer.deb \
+	virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso
 
 # fonts
 . fonts/installs.sh
