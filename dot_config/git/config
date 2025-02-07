@@ -25,6 +25,9 @@
 [format]
 	signoff = true
 
+[core]
+	ignorecase = false
+
 [include]
 	path = profiles/personal
 
