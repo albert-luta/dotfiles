@@ -13,6 +13,8 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --branch chezmoi --apply "albert-lu
     - **Become password:** enter local MacOS password
     - **Password:** enter local MacOS password
 
+- Restart PC
+
 #### Other:
 
 - the correct work email + ssh auth + ssh sign for git are automatically applied when working under **~/projects/work**
