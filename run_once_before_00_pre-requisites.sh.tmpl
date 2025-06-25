@@ -8,6 +8,11 @@ fi
 
 brew update
 
+# install chezmoi
+if ! command -v chezmoi > /dev/null; then
+	brew install chezmoi
+fi
+
 # install age
 if ! command -v age > /dev/null; then
 	brew install age
