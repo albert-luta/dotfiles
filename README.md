@@ -29,3 +29,4 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --branch chezmoi --apply "albert-lu
 - fix: ssh signing keys are not added to ssh-agent when first used
 - automate make zsh the default shell (on linux)
 - improve README
+- automatically switch from https to ssh connection for the git repo (`git remote set-url origin <ssh-url>`)
