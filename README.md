@@ -1,5 +1,20 @@
 # Dotfiles
 
+## Installation
+
+- Download chezmoi and dotfiles repo and start installing
+
+```sh
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --branch chezmoi --apply "albert-luta"
+```
+
+- Password prompts you could/will get
+    - **Enter passphrase:** enter chezmoi age password
+    - **Become password:** enter local MacOS password
+    - **Password:** enter local MacOS password
+
+#### Other:
+
 - the correct work email + ssh auth + ssh sign for git are automatically applied when working under **~/projects/work**
 - ssh auth will be remembered after first use
 - to remember ssh sign, you have to add it manually to the agent - `ssh-add ~/.ssh/<personal/work>-sign_ed25519`
