@@ -58,6 +58,15 @@
   ansible.builtin.command: brew services start colima
   when: is_colima_service_started.stdout == "false"
 
+- name: Check if brew analytics is enabled
+  ansible.builtin.shell: "if [[ -z \"$(brew analytics | grep enabled)\" ]]; then echo \"false\"; else echo \"true\"; fi"
+  register: is_brew_analytics_enabled
+  changed_when: is_brew_analytics_enabled.stdout == "true"
+
+- name: Turn off brew analytics
+  ansible.builtin.command: brew analytics off
+  when: is_brew_analytics_enabled.stdout == "true"
+
 # community.general.osx_defaults doesn't currently work with dict: https://github.com/ansible-collections/community.general/issues/238
 - name: Check if ctrl+space keyboard shortcut is set
   ansible.builtin.shell: "plutil -extract AppleSymbolicHotKeys.60.enabled raw -expect bool ~/Library/Preferences/com.apple.symbolichotkeys.plist"
