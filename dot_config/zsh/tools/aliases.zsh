@@ -14,9 +14,9 @@ alias reboot='sudo shutdown -r now'
 alias sleep='sudo shutdown -s now'
 
 # cp, mv and rm
-alias cp='cp -iv'
-alias mv='mv -iv'
-alias rm='rm -iv'
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
 
 # clipboard
 alias cbcopy='pbcopy'
