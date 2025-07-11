@@ -49,6 +49,7 @@
       - font-hack-nerd-font
       - tableplus
       - postman
+      - anydesk
 
 - name: Check if colima service is started
   ansible.builtin.shell: "if [[ \"$(brew services list | grep colima | awk '{ print $2 }')\" == \"started\" ]]; then echo \"true\"; else echo \"false\"; fi"
