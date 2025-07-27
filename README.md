@@ -31,3 +31,4 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --branch chezmoi --apply "albert-lu
 - improve README
 - automatically switch from https to ssh connection for the git repo (`git remote set-url origin <ssh-url>`)
 - disable inverted (natural) mouse scroll on MacOS
+- disable spelling prediction
