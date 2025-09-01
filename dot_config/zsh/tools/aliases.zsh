@@ -4,8 +4,6 @@ alias tree='lsd --tree -A --group-dirs=last'
 
 # nvim
 alias v='nvim'
-alias vi='nvim'
-alias vim='nvim'
 
 # system
 alias shutdown='sudo shutdown -h now'
