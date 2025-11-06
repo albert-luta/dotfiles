@@ -23,6 +23,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --branch chezmoi --apply "albert-lu
 
 #### TODO:
 
+- disable mouse acceleration
 - shift + tab when suggesting files/dirs when doing cd is not working
 - ctrl + r invert where the input is (from bottom to top)
 - give alacritty permissions to manage other apps - system settings -> privacy & security -> app management
