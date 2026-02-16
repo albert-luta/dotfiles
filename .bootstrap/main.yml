@@ -4,7 +4,7 @@
   connection: local
   gather_facts: true
   vars:
-    should_be_root: "{{ False if ansible_os_family == 'Darwin' else True }}"
+    should_be_root: "{{ False if ansible_facts['os_family'] == 'Darwin' else True }}"
     node_version: "v20"
 
   tasks:
