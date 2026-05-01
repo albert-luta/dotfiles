@@ -1,10 +1,7 @@
 ---
-# In case we'll need to tap repos in the future
-#
-# (font-hack-nerd-font was moved from tap to main homebrew, so tapping is unnecessary)
-# - name: Tap Homebrew repositories
-#   community.general.homebrew_tap:
-#     name: homebrew/cask-fonts
+- name: Tap Homebrew repositories
+  community.general.homebrew_tap:
+    name: oven-sh/bun
 
 - name: Install brews
   community.general.homebrew:
@@ -28,6 +25,7 @@
       - docker-compose
       - colima
       - qemu
+      - bun
 
 - name: Install casks
   community.general.homebrew_cask:
