@@ -13,6 +13,19 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --branch chezmoi --apply "albert-lu
     - **Become password:** enter local MacOS password
     - **Password:** enter local MacOS password
 
+- Login to github cli with both personal and work accounts by running for each:
+
+```sh
+gh auth login -h github.com
+```
+
+```
+// 1. Select 'SSH'
+// 2. Select 'Skip' - as ssh auth tokens are already uploaded to github
+// 3. Select 'Login with a web browser' and follow the steps there
+// 4. That's it, the account should be added successfully - repeat these steps for the other account
+```
+
 - Restart PC
 
 #### Other:
