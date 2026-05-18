@@ -28,7 +28,7 @@
       - bun
       - gh
 
-- name: Install casks
+- name: Install casks that don't require sudo
   community.general.homebrew_cask:
     name:
       - firefox
@@ -40,15 +40,57 @@
       - swiftdefaultappsprefpane
       - bitwarden
       - adobe-acrobat-reader
-      - microsoft-teams
-      - microsoft-outlook
-      - microsoft-word
-      - microsoft-excel
-      - microsoft-powerpoint
       - font-hack-nerd-font
       - tableplus
       - postman
       - anydesk
+
+- name: Check privileged casks installation state
+  ansible.builtin.command: brew list --cask {{ item }}
+  register: privileged_casks_installed
+  changed_when: false
+  failed_when: false
+  loop:
+    - microsoft-teams
+    - microsoft-outlook
+    - microsoft-word
+    - microsoft-excel
+    - microsoft-powerpoint
+
+- name: Build list of missing privileged casks
+  ansible.builtin.set_fact:
+    privileged_casks_to_install: "{{ privileged_casks_installed.results | rejectattr('rc', 'equalto', 0) | map(attribute='item') | list }}"
+
+- name: Initialize privileged cask sudo password
+  ansible.builtin.set_fact:
+    privileged_cask_sudo_password: "{{ ansible_become_password | default(ansible_become_pass | default('')) }}"
+  no_log: true
+  when: privileged_casks_to_install | length > 0
+
+- name: Prompt for privileged cask sudo password
+  ansible.builtin.pause:
+    prompt: "Enter macOS sudo password for privileged cask installs"
+    echo: false
+  register: privileged_cask_password_prompt
+  no_log: true
+  when:
+    - privileged_casks_to_install | length > 0
+    - privileged_cask_sudo_password | length == 0
+
+- name: Store prompted privileged cask sudo password
+  ansible.builtin.set_fact:
+    privileged_cask_sudo_password: "{{ privileged_cask_password_prompt.user_input }}"
+  no_log: true
+  when:
+    - privileged_casks_to_install | length > 0
+    - privileged_cask_sudo_password | length == 0
+
+- name: Install casks that may require sudo
+  community.general.homebrew_cask:
+    name: "{{ privileged_casks_to_install }}"
+    sudo_password: "{{ privileged_cask_sudo_password }}"
+  no_log: true
+  when: privileged_casks_to_install | length > 0
 
 - name: Check if colima service is started
   ansible.builtin.shell: "if [[ \"$(brew services list | grep colima | awk '{ print $2 }')\" == \"started\" ]]; then echo \"true\"; else echo \"false\"; fi"
