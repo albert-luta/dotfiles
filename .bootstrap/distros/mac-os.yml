@@ -26,6 +26,7 @@
       - colima
       - qemu
       - bun
+      - gh
 
 - name: Install casks
   community.general.homebrew_cask:
