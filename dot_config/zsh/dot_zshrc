@@ -22,6 +22,7 @@ source $HOME/.config/zsh/tools/completion.zsh
 source $HOME/.config/zsh/tools/fzf.zsh
 source $HOME/.config/zsh/tools/fnm/init.zsh
 source $HOME/.config/zsh/tools/ssh.zsh
+source $HOME/.config/zsh/tools/gh.zsh
 
 # command suggestions based on history
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
