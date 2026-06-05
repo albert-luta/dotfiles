@@ -36,6 +36,8 @@ gh auth login -h github.com
 
 #### TODO:
 
+- brew trust --formula oven-sh/bun/bun
+- brew install --formula docker
 - disable mouse acceleration
 - shift + tab when suggesting files/dirs when doing cd is not working
 - ctrl + r invert where the input is (from bottom to top)
