@@ -36,6 +36,7 @@ gh auth login -h github.com
 
 #### TODO:
 
+- install pipx + add /Users/albertluta/.local/bin to PATH env variable + completions
 - brew trust --formula oven-sh/bun/bun
 - brew install --formula docker
 - disable mouse acceleration
