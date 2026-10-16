@@ -1,21 +1,31 @@
 gh() {
   local wanted current
 
-  wanted="$(git config --get user.ghAccount 2>/dev/null)"
+  if [[ "$1" == "auth" ]]; then
+    command gh "$@"
+    return
+  fi
 
-  # If not in a git repo or no mapping configured, just run gh normally
+  case "$PWD" in
+    "$HOME/projects/work"|"$HOME/projects/work/"*)
+      wanted="albert-luta-epam"
+      ;;
+    *)
+      wanted="$(git config --get user.ghAccount 2>/dev/null)"
+      ;;
+  esac
+
   if [[ -z "$wanted" ]]; then
     command gh "$@"
     return
   fi
 
-  # Detect active gh account
-  current="$(command gh auth status -h github.com 2>/dev/null | awk -F': ' '/Active account/ {print $2; exit}')"
+  current="$(command gh auth status --active --hostname github.com \
+    --json hosts --jq '.hosts["github.com"][0].login // empty' 2>/dev/null)"
 
-  # Switch only when needed
-  if [[ -n "$current" && "$current" != "$wanted" ]]; then
-    command gh auth switch -h github.com -u "$wanted" >/dev/null || {
-      echo "Could not switch gh account to: $wanted"
+  if [[ "$current" != "$wanted" ]]; then
+    command gh auth switch --hostname github.com --user "$wanted" >/dev/null || {
+      printf 'Could not switch gh account to: %s\n' "$wanted" >&2
       return 1
     }
   fi
