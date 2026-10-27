@@ -1,4 +1,4 @@
-# Fix special characters (shift + num) not working in vscode + nvim
+-- Fix special characters (shift + num) not working in vscode + nvim
 if vim.env.TERM_PROGRAM == "vscode" then
   vim.api.nvim_create_autocmd("UIEnter", {
     once = true,
